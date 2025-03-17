@@ -7,19 +7,17 @@ function SideMenu({myPage, setMyPage, pageList}) {
 
   for (let page in pageList){
     links.push(   
-    <button key={page} style={{ color : myPage == pageList[page] ? '#747bff' : 'white' }} onClick={() => setMyPage(pageList[page])}>
+    <button key={page} className="menuButton" style={{ color : myPage == pageList[page] ? '#747bff' : 'white' }} onClick={() => setMyPage(pageList[page])}>
         {pageList[page]}
     </button>
     )
   }
   
   return (
-    <>
       <div className="menu">
-		<h3>MENU</h3>
+		<p className="menuHead">MENU</p>
 		{links}
       </div>
-    </>
   )
 }
 

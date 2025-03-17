@@ -1,3 +1,7 @@
+.menuHead {
+	margin: 0px;
+}
+
 .menu {
   position: absolute;
   left: 1em;
@@ -5,4 +9,40 @@
   z-index: 69;
   display: grid;
   justify-content: center;
+  background-color: #333333cc;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+
+.menuButton {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  margin-top: 0.6em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.menuButton:hover {
+  border-color: #646cff;
+}
+
+.menuButton:focus,
+.menuButton:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  .menuButton {
+    background-color: #f9f9f9;
+  }
 }
